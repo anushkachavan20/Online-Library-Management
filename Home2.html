@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" type="text/css" href="Home2.css">
+     
+</head>
+<body>
+    <div class="main">
+        <div class="head1">
+            <img src="https://previews.123rf.com/images/branche/branche1312/branche131200093/24355125-library-icon.jpg" width="100">
+        </div>
+        <div class="header">
+            
+            <a class="des" target=" " href="Home2.html">Home</a>
+            <a  class="des" target=" "  href="Atb2.html">About us</a>
+            <a  class="des" target=" " href="Books2.html">Books</a>
+            <a  class="des" target=" " href="Contact2.html">Contact us</a>
+            <a  class="des" target=" " href="Feedback2.html">Feedback</a>
+            <a  class="des" target=" " href="Cart2.html"><img src="https://t3.ftcdn.net/jpg/03/14/84/68/360_F_314846831_5jJsC7Us9obgwMjRDqFhs04dodzvnZvi.jpg" width="50"></a>
+
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="search_tab">
+      <input class="search_bar" type="text" name="search" placeholder="Search for a Book here" width="60" height="50">
+      <button class="search_btn"> Search </button>
+    </div>
+    <br>
+    <h1 class="trend">Trending Books >>></h1>
+    <div class="main2">
+        <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="https://wallpapercave.com/wp/wp10395029.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://wallpapercave.com/wp/wp10395029.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://wallpapercave.com/wp/wp10395029.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://media.istockphoto.com/photos/library-interior-picture-id543350202?b=1&k=20&m=543350202&s=170667a&w=0&h=L165652d3X4F-VrcbsVO0K9bDQgXWnR9AyjJ4KP-wsc=" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+    
+
+
+    </div>
+    
+</body>
+</html>
